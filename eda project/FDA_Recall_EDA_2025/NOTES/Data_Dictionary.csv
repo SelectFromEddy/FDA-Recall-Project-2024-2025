@@ -1,0 +1,11 @@
+Column,Data Type,Description,Notes
+recalling_firm,Text,The Company responsible for issuing the product  recall ,Manufacturer or distributor
+recall_status,Text,The current stage of the recall process,Standardized  values
+recall_state,Text,The state where the product was recalled from ,Changed nulls to 'Unknown'
+recall_date ,Date,The date that the product was recalled on,Fixed data type
+reason_for_recall,Text,The reason why the product was recalled,Cleaned up spaces
+product_description,Text,Descrption of the product in detail,Cleaned up spaces
+recall_id,Integer,Unique ID for each recall,Standardized  values
+recall_class,Text,FDA classification of health risk for the recall ,Higher class = Higher risk 
+product_id,Integer,Unique ID for each product,May repeat across recalls if the same product
+recall_month,Date,Month that the recall occurred,Derived from recall date

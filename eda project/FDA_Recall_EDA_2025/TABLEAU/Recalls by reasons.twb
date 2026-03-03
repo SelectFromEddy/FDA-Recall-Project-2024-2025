@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Q6 _Remake' inline='true' name='federated.0ydyhj700m7nwz1dbtobt1azw59z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q6 _Remake' name='textscan.0ad10zw00lnywj12t47s819cayj8'>
+            <connection class='textscan' directory='C:/Users/Green/Desktop/eda project' filename='Q6 _Remake.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ad10zw00lnywj12t47s819cayj8' name='Q6 _Remake.csv' table='[Q6 _Remake#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Reason' ordinal='1' />
+            <column datatype='integer' name='Recall' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q6 _Remake.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Q6 _Remake.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reason]</local-name>
+            <parent-name>[Q6 _Remake.csv]</parent-name>
+            <remote-alias>Reason</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recall</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recall]</local-name>
+            <parent-name>[Q6 _Remake.csv]</parent-name>
+            <remote-alias>Recall</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Q6 _Remake.csv' datatype='table' name='[__tableau_internal_object_id__].[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Green/AppData/Local/Temp/TableauTemp/#TableauTemp_1qv9iby0unevm41cwhlb01yz718b.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/14/2026 03:00:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Q6 _Remake.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reason</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Q6 _Remake.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recall</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recall</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Q6 _Remake.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Q6 _Remake.csv' id='Q6 _Remake.csv_18B833376125433EB3C758DB1DA9A5B6'>
+            <properties context=''>
+              <relation connection='textscan.0ad10zw00lnywj12t47s819cayj8' name='Q6 _Remake.csv' table='[Q6 _Remake#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Reason' ordinal='1' />
+                  <column datatype='integer' name='Recall' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Top 5 Food Recall Reasons Show a 3.1% Increase From 2024 to 2025</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q6 _Remake' name='federated.0ydyhj700m7nwz1dbtobt1azw59z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ydyhj700m7nwz1dbtobt1azw59z'>
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Recall]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recall]' derivation='Sum' name='[sum:Recall:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Reason:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#5880ab</color>
+                <color>#6388b0</color>
+                <color>#6e90b4</color>
+                <color>#7a98b9</color>
+                <color>#86a1bd</color>
+                <color>#93a9c2</color>
+                <color>#a0b2c6</color>
+                <color>#adbccb</color>
+                <color>#bbc5cf</color>
+                <color>#cacfd4</color>
+                <color>#d9d9d9</color>
+                <color>#d9cdcd</color>
+                <color>#dac2c2</color>
+                <color>#dbb6b7</color>
+                <color>#dbaaab</color>
+                <color>#dc9fa0</color>
+                <color>#dd9394</color>
+                <color>#de8788</color>
+                <color>#de7b7c</color>
+                <color>#df6f70</color>
+                <color>#e06365</color>
+                <color>#e15759</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' id='legend-color' value='#4e79a7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' id='legend-color' value='0' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' id='legend-color' value='none' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ydyhj700m7nwz1dbtobt1azw59z].[sum:Recall:qk]</rows>
+        <cols>([federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Reason:nk] * [federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{A8A8E65B-E4D2-4AC6-A944-50F665209D75}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ydyhj700m7nwz1dbtobt1azw59z].[:Measure Names]</field>
+            <field>[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Reason:nk]</field>
+            <field>[federated.0ydyhj700m7nwz1dbtobt1azw59z].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21422892-9A06-472D-8740-71351A29A0B9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Recallsbyyear' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Q6' inline='true' name='federated.0orsn9u1a9h1hv1g9kc3k02up7h9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q6' name='textscan.0efq0cs0cwg4pt19ecnwc1pp8r6c'>
+            <connection class='textscan' directory='C:/Users/Green/Desktop' filename='Q6.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Potential Listeria monocytogenes]' />
+            <value name='[Potential Salmonella contamination]' />
+            <value name='[Tested positive for Listeria Monocytogenes]' />
+            <value name='[Tested positive for Salmonella]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Q6.csv].[Potential Listeria monocytogenes]' />
+              <field name='[Q6.csv].[Potential Salmonella contamination]' />
+              <field name='[Q6.csv].[Tested positive for Listeria Monocytogenes ]' />
+              <field name='[Q6.csv].[Tested positive for Salmonella ]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0efq0cs0cwg4pt19ecnwc1pp8r6c' name='Q6.csv' table='[Q6#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='integer' name='Potential Listeria monocytogenes' ordinal='1' />
+              <column datatype='integer' name='Potential Salmonella contamination' ordinal='2' />
+              <column datatype='integer' name='Tested positive for Listeria Monocytogenes ' ordinal='3' />
+              <column datatype='integer' name='Tested positive for Salmonella ' ordinal='4' />
+              <column datatype='integer' name='Grand Total' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q6.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Q6.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grand Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grand Total]</local-name>
+            <parent-name>[Q6.csv]</parent-name>
+            <remote-alias>Grand Total</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Contamination Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Potential Listeria monocytogenes&quot;' value='Potential Listeria Contamination' />
+          <alias key='&quot;Potential Salmonella contamination&quot;' value='Potential Salmonella Contamination' />
+          <alias key='&quot;Tested positive for Listeria Monocytogenes&quot;' value='Confirmed Listeria Contamination' />
+          <alias key='&quot;Tested positive for Salmonella&quot;' value='Confirmed Salmonella Contamination' />
+        </aliases>
+      </column>
+      <column caption='Number Of Recalls' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Year (date)]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE( 1970, [Year], 1 )' />
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Q6.csv' datatype='table' name='[__tableau_internal_object_id__].[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Names]' derivation='Attribute' name='[attr:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='Min' name='[min:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Green/AppData/Local/Temp/TableauTemp/#TableauTemp_14wi9ua0fay8yv13j5we20w8p9tp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/17/2026 04:39:42 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Q6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grand Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Grand Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grand Total</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Q6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Q6.csv_C6C71A6953734A14A88710DB0B22FB20]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Potential Listeria monocytogenes&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Tested positive for Salmonella&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tested positive for Listeria Monocytogenes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Potential Salmonella contamination&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[min:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Potential Listeria monocytogenes&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Tested positive for Salmonella&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tested positive for Listeria Monocytogenes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Potential Salmonella contamination&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Potential Listeria monocytogenes&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Tested positive for Salmonella&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tested positive for Listeria Monocytogenes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Potential Salmonella contamination&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Q6.csv' id='Q6.csv_C6C71A6953734A14A88710DB0B22FB20'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Potential Listeria monocytogenes]' />
+                  <value name='[Potential Salmonella contamination]' />
+                  <value name='[Tested positive for Listeria Monocytogenes]' />
+                  <value name='[Tested positive for Salmonella]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Q6.csv].[Potential Listeria monocytogenes]' />
+                    <field name='[Q6.csv].[Potential Salmonella contamination]' />
+                    <field name='[Q6.csv].[Tested positive for Listeria Monocytogenes ]' />
+                    <field name='[Q6.csv].[Tested positive for Salmonella ]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0efq0cs0cwg4pt19ecnwc1pp8r6c' name='Q6.csv' table='[Q6#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='Year' ordinal='0' />
+                    <column datatype='integer' name='Potential Listeria monocytogenes' ordinal='1' />
+                    <column datatype='integer' name='Potential Salmonella contamination' ordinal='2' />
+                    <column datatype='integer' name='Tested positive for Listeria Monocytogenes ' ordinal='3' />
+                    <column datatype='integer' name='Tested positive for Salmonella ' ordinal='4' />
+                    <column datatype='integer' name='Grand Total' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Top 5 Recalls in 2024-2025 Show Potential Contamination Exceeds Confirmed Cases</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q6' name='federated.0orsn9u1a9h1hv1g9kc3k02up7h9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0orsn9u1a9h1hv1g9kc3k02up7h9'>
+            <column caption='Contamination Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Potential Listeria monocytogenes&quot;' value='Potential Listeria Contamination' />
+                <alias key='&quot;Potential Salmonella contamination&quot;' value='Potential Salmonella Contamination' />
+                <alias key='&quot;Tested positive for Listeria Monocytogenes&quot;' value='Confirmed Listeria Contamination' />
+                <alias key='&quot;Tested positive for Salmonella&quot;' value='Confirmed Salmonella Contamination' />
+              </aliases>
+            </column>
+            <column caption='Number Of Recalls' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Potential Listeria monocytogenes&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Potential Salmonella contamination&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Tested positive for Listeria Monocytogenes&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Tested positive for Salmonella&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Potential Listeria monocytogenes&quot;</bucket>
+              <bucket>&quot;Tested positive for Listeria Monocytogenes&quot;</bucket>
+              <bucket>&quot;Potential Salmonella contamination&quot;</bucket>
+              <bucket>&quot;Tested positive for Salmonella&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]' value='92' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]' value='117' />
+            <format attr='text-align' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='auto' />
+            <format attr='vertical-align' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='background-color' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]' value='false' />
+            <format attr='text-align' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='auto' />
+            <format attr='font-weight' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='bold' />
+            <format attr='font-size' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='12' />
+            <format attr='text-orientation' field='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2303867340087891' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]</rows>
+        <cols>([federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok] / [federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk])</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]</field>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</field>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]</field>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tested positive for Listeria Monocytogenes&quot;</value>
+                <value>2024</value>
+                <value>0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]</field>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</field>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]</field>
+                  <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[sum:Pivot Field Values:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tested positive for Salmonella&quot;</value>
+                <value>2024</value>
+                <value>0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C836915B-C22D-4978-BEF1-31F8F3C2876D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='5' param='[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[:Measure Names]</field>
+            <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Pivot Field Names:nk]</field>
+            <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:ok]</field>
+            <field>[federated.0orsn9u1a9h1hv1g9kc3k02up7h9].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{26D11C99-4CE5-41FD-A658-DDE551BE76F8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAOD0lEQVR4nO3d228bZ37G8e8ceJIo6ixLjm1ZPkWO4wSOt4WRXSebBdK0cBctjAZF0Qa9
+      6T/Ui/aiFwWKAgVaFA0KbLdogbbYJg2cONnUmzjrA21LiqwjdeCZQ87M2ws7wWbN2G44IinP
+      87mxJVEvf7D58B3O/OZ9LWOMQSSm7L1+AmMMypj0qz0PQKvVwvO8vX6arjLGUKtWaPkBxhiK
+      uzv4QfiN7wOEYYAfBD2uVh7H7XUB+9HaUp788ibLqxv85vxBbq/XqVZrXDh7jLsr29xf2+QP
+      L/+Y9/79J2yZIS7/zo96XbJ8iz2fAZ5F00dOcHhyiOHRCZYWN7n4xusM2yHjR0/x3PgAI2MT
+      bHx5i+zMcdIJ/RP3M/3vfAf3b/+C/GaLt374KpmMTalcpx4ErNz8lIUdw5uvXWB5eY1iYZXF
+      hUUarbDXJcu30CHQdxBYLkF1nZ+9/yGvXvg+H3zwPifPvoLt7+KXV/jvD67y+sXXwW9y5Niq
+      ZoE+Zu31adBms0kYhqTT6b18GpHvRG9NEmsKgMSaAiCxpgBIrHV8Fsj3qvzvF3c49+JJbucX
+      yQwNY7wy9cBh/tTxKGoU2TMdzwBuapBcNk3gN/FaARvrqxg7w0jCxjOGMNQ5cOlfHQfAq1VY
+      W1ujWAuZGM0yMjqOVytSqNZJWha2raMs6V+RXgcIgwDLccAYDGBblq4DSF+L9Eqw7TgP/mJZ
+      WFEOLLJHdHwisaYASKwpABJrfdcNeu/ePRYXFzl06BBLS0scPnyYa9eucenSJTKZTK/Lk2dM
+      380Ac3NzAHieR7FYxLIsZmdnCXRroeyBvpsB7t69y61btwCYnJxkc3OTfD5PKpXipZde6nF1
+      8qzp6/sBgiDA+erUqsgeiGQGePBCtWl6HrabxDIBgbFIJr59+I3dKvnl7Y6fe2Z8iLmZkY7H
+      kXiKpBnuyqfXuXDuDLduL2K7Lo7xaYUWL5w5/a2/9/ndDf78Hz/s9On58aun+LPffaXjcSSe
+      Og6AmxpkavzBO3Dg+9gJh2QyyxABTWNAzXDSxyJphiuXymztlkmnU6RSAzhWi6qBlJrhpM91
+      PAOkBrKcP38egAMHpjsuSKSb9PYssaYASKwpABJrCoDEmgIgsaYASKwpABJrCoDEWscXwowJ
+      2SxsMTE2wvr6JnYiRdoJqQcO05NjUdQosmc6ngGCpsfi8gqW7TI5MUqpVGRzu0yjuE1LG+RJ
+      n4tgZbgMw9kMlmWxvrrCwUOHsLCwsdBLX/pdx4dAXq1CGIQUtotkRyYYTCUZyWXwQoekZdG0
+      LM0C0rciaYabn5//xvfGp9QUJ/uDzgJJrCkAEmsKgMSaAiCxpgBIrCkAEmsKgMSaAiCx1nkv
+      UKvBZ1/cwJiQhbt5NrZ2ub90j/y9pSjqE9lTHQfAshMkXItWvcjGVoVWs0bTd8iYQLtESt/r
+      OABh0KJULFLzQnJDg5RLZTyvSqnewNXCWNLnOu4FsmyH08+fJpFKcXQ2A04C++HiuA6gVf2l
+      n3UcAMdNMJRLPPwq+fDPxLc9XKSv6PhEYk0BkFhTACTWFACJNQVAYk0BkFhTACTWFACJtY4D
+      4HtVPvjoY0zY4vrn19naKXL7xnU+u35D6wJJ34tkl8iJ0RwYyGSS7Oxu4yZzTODTMAZLzXDS
+      xyLZJXJ7a5vNnV1syyEMIPSr7DZ90mqGkz4XycJYFy5cAMCMT3zjZ1ang4vssY4D8KssSy95
+      2V90fCKxpgBIrCkAEmuRfgaQp1cqlXjvvfe4dOkS+XyearWK53mMj49z/PjxXpcXG5oBeiSb
+      zTIwMECj0WBlZYVarcbc3ByVSqXXpcWKZoAeKRaL5PN5ZmZmSCQSrK6uYlkWKysrnD17VtdP
+      ukQB6JFcLsc777yD67o4joMxhlarxblz53Q6uYsiCUC9XieTyRAGLWoNH8e0aIQ2o7lsFMPv
+      ayZoEa5fb/uzr5YO+KpZxP21r7/BTeNMzbf7iXSg4wD4XpVPrl3nBxd+g+WFPCU/TRIfG0Mu
+      dyqKGvc109il9vd/0vE49thxBv/0nyOoSH5VBLtEDjI1PkKzVmS70qRaKeK6SdKui6+V4aTP
+      RbJLpNfwKDUsXj57hq2dMq1GBS90SVoWLdtWCKRvRdIMd/bs2a+/nhgfBUY7HVakK3SuTWJN
+      AZBYUwAk1hQAiTUFQGJNAZBYUwAk1hQAibWOL4SZ0OfOvSWOHT3M0uISqewwTtCgHjjMHpqJ
+      okaRPdNxAAI/oNFqYjsJBtJJdstlXMsmQZOmeoGkz3V8COQkkrgWBH6L4fEpWo0age/T8gNs
+      LYwlfa7jGaDVqJJKptgplalXKhw8NItLCy+0cYFmBEWK7JWOA5DMZJmbe3jjy9jY198f6nRg
+      kS7Q8YnEmgIgsaYASKwpABJrCoDEmgIgsaYASKwpABJrkSyM9ekXdzj/0hkWF+8RWEmcoEEj
+      cJh/XqscS3+LZGGs4Wwa27EZHhrEcS1wMowkbTw1w0mfi2SXyPW1ddbXVvni5j1SyTRevUSh
+      WiepZjjpc5EsjHXx4kUADkwfBGBmagKDPmBI/9uT5dEty9IWqbIv6E1aYk0BkFhTACTWFACJ
+      NQVAYk0BkD3XbD64M7xSqeD7PrVajUaj0eOqHtAukbKnSqUS7777LpcvX+bKlSskEgl838f3
+      fd56662e74gZyQzg+z4AYeATGoPfauI1W1EMLftcLpdjdnaWSqXCiRMnSCaTJBIJ1tfX+6JN
+      pm0AQt+juLvNL2/de+IAvlflysc/x4QBN37xEVsVnzv5PPnb+fbbfUqsbG9vs7m5SaPRYGFh
+      gVwux8TEBGfOnMFxnF6X1/4QqLx6i7/912vMHJri9Km5xw/wcJdIy3Y4ODNNk4BkKssQAU1j
+      oA9SLr0zNjbG22+/DcDc3ONfS73wSACM8fnlQoGpkTQj2Sev7uPVKlTKFTYKW+wWiuBlSNst
+      qqHDjHaJjI1G0+evf/ppx+MMD6b54zfPPvmBEWkzA1hMHjjI6NRB3NTAEwdIDWR55ZVXAJia
+      GI+6PtknWn7Av310p+NxZsayvQ6AobCxyu0793CHZzh+9HDXihHptkc+BFuWy/zsGIVWmoFk
+      L0oS6Z62Z4EGRmd48/vncZOZbtcj0lVtzwI1ylt8WajRrJW7XY9IV7WdAbLTpxgOS7x8/nvd
+      rkekq9oGYHfpc27e3uLajc+7XY9IV7U9BBqYPMqR2TWSOZ3WlGfbowEwIT/9l59QqXlMJXI9
+      KEmke9oeAnn1OqVylTAMnjiAMSHrGxtgDKvLS+yWa+xubbC6sRV5sSJRe7QVAvi9P/gjnGSa
+      pPvkZtGg6fHlyipjuTRNk6K6fh9wcAlpTY5hjNmDskWi8WgAwjrv/s1fYQ6+yPNHD/K9l888
+      foBUhtxgBmMMlm0/XA7FwsJCL33pd4+8xdvOIG/89m+RdQ0HDkw/cQCvViEMQkp1g2vqjE5M
+      MzI8QGIoR9Kyen7Dg8jjtJkBAq58epMfvvEG//lfP+Pw5d9/7ACpgSzz8/MPvhgbefhd7REp
+      +8OjB/mWTS5t8/7/vE8qO9bmV0SeHY/MAJZlcfG1ixTqCQ5O6jSoPNvan+YJA/7pH/6O/3j/
+      wy6XI9JdbQPgpAc5eWSOw4ef/CFYZD9rG4DyxgLL9wt8dO2zbtcj0lVtA5CbPsHUVILjh/rv
+      JmaRKD0SAGNClm9+TGJqnvXlJy+LIrKftZkBQgrlkJ2lz7GSg92vSKSL2pwGdTl5ZIK72yGn
+      jj/9DfG+V+Fm/ktSA4PQrFAPHF584flIixWJWtvPAMaE1Os16nXvqQcygDGGne0CTmKIiXSS
+      hnaJlB7a3NykWCzSbDZZWFho25jZ9oaYdG6StLnFTqn01E/mJjKM5DIMWsME9TI7oc20FsaS
+      HgnDkKtXr2LbNqlUimPHjrV9XNsAWLZLJp1g5f7KUz+hZTs8d/goWBY8TJra4KRXgiCg1WqR
+      SqVYX1+n2WwyPj5ONpv9xuMeuzz6/3fx0q87P9UBKj3mOA6jo6OkUilmZ2cpFAqk0+lHHtfm
+      lkjD1aufAIYwVEe/7E+2bfPaa6898XFtZ4DxiXFKXoGLPzgXeWEiUSr8xV9iGk9/subXtV0b
+      dGlxCd+45O/eZfbgZAflieyt+ic/x9Rq3/n3Hw2AZfPmpcffBCPyrNAmeRJrCoDEmgIgsRZh
+      AAy72wVqXotGrUyx/N0/mIh0S2T7BPtejbVCEbNewLFtLGPIzqsZTvpbZAEwJqTlebgpB9dN
+      kSTANwajPiDpY5EFwHFTZNIJkpksLi28MElSzXDS5yILgO0mOXHyZFTDiXSFzgJJrCkAEmsK
+      gMSaAiCxpgBIrCkAEmsKgMSaAiCxFtmFsNBvsrq2QWi5pJ2AeuBw5DmtLi39LbIZwHISTE+N
+      0Wx6lKstrEaNphbGkj4XXQAsi/vL93nu8CHCMMAPQ2we3J0v0q8iOwQCmJh+jrTrMDU5ghc4
+      uJZFM8onEIlYpAEYGBgAIDcyHuWwIntGxycSawqAxJoCILGmAEisKQASawqAxJoCILGmAEis
+      RbcuUBhwJ3+b3Pg0td0N6oHD/KnjUQ0vsiciC0CzXmSn6OGmixg7w4jt4xkDaoaTPhZZANzk
+      AAMZl1rNww6aVEKbA5aFr4WxpI9FtzJcIs0LL5x+uEGewRhLHzCk70XaDGd93fpsaaNI2Rf0
+      Ji2xpgBIrCkAEmsKgMSaAiCxpgBIrCkAEmsRXgcwtFotLMvBwhACCTfSywwikYtsBjBBi1u3
+      7lCt18nfvsnNG7dRA4T0uwjfom1y2TSra6ukUkMMEdBUM5z0uf8Dhzjvc/Dk2uAAAAAASUVO
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

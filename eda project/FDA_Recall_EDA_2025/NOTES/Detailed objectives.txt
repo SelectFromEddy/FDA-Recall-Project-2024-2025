@@ -1,0 +1,75 @@
+Recall Project Objectives
+
+Grain - (one row) = One recall event 
+
+1.How did the total number of recalls change from 2024 to 2025?
+Year-over-year increase in recalls: 1,539 in 2024 to 1,576 in 2025 (up +37 recalls, about +2.4%).
+This suggests recall volume is slightly trending upward,
+so it’s worth monitoring whether this is early signal of a broader quality or compliance drift.
+
+2.Did the most common recall class change between years?
+Total recalls stayed basically flat from 2024 to 2025 (1,539 - 1,576, +2.4%), 
+Class I recalls increased (667 - 770) and made up a larger share of all recalls (43% - 49%),
+while Class II declined (805 - 718). Overall volume didn’t change much, but 2025 skewed more serious.
+
+3.How did monthly recall trends differ between 2024 and 2025?
+Across 2024–2025, there were 3,115 total recalls (about 130 per month on average). 
+Recalls were highly seasonal, peaking in June 2025 (303) and bottoming out in November 2025 (63).
+Year-over-year, the pattern shifted slightly: 2024 stayed flat from Jan to Dec (147-145), 
+while 2025 increased from Jan to Dec (99-137, +38), suggesting a stronger back-half-of-year ramp in 2025.
+
+4.Which states saw the largest increase or decrease in recalls?
+California becomes the clear #1 recall state in 2025, 
+The top five states with increases each added roughly 50–120 more recalls in 2025, 
+showing that most of the growth came from a small group of states.
+The top five states with decreases each cut recalls by about 60–140 cases,
+pointing to strong year-over-year drops rather than small improvements.
+Most states changed only slightly, while a few states drove the big gains and losses, 
+meaning overall recall trends were shaped by outliers, not nationwide shifts.
+
+5.How did recall status improve from 2024 to 2025?
+In 2024, recalls were overwhelmingly terminated: 1,358 of 1,539 total recalls (about 88%). 
+In 2025, total recalls stayed about the same (1,576),
+but the mix shifted sharply toward active work: ongoing recalls jumped to 778 (about 49%),
+while terminated fell to 703 (about 45%).
+Net: volume is flat year over year, but 2025 has a much larger share of recalls still in progress,
+suggesting a backlog or slower closure rate.
+
+6.Did the leading recall reasons change year over year?
+Across 2024–2025, recall volume is essentially flat slightly increasing in 2025, 
+with 322 recalls in 2024 vs 332 in 2025.
+The biggest drivers are pathogen-related contamination,
+with the single largest recall reason being Listeria detected on food contact surfaces in 2025 (86 recalls) 
+and Salmonella-related issues close behind (e.g., cucumber ingredient contamination leading to sushi recalls)
+
+
+## Key Metrics & Definitions
+- Recall Count: Total number of recall events
+- Recall Class:
+  - Class I: High risk (serious health consequences or death)
+  - Class II: Moderate risk (temporary or reversible health effects)
+  - Class III: Low risk (unlikely to cause adverse health effects)
+- Recall Status: Current stage of recall activity (e.g., ongoing, terminated)
+
+Metrics (The important numbers)
+
+- Total recalls 
+2024 - 1539 total recalls
+2025 - 1576 total recalls 
+
+- Recall count by class (Year over Year)
+2024 - Class II, 805 recalls 
+2024 - Class I, 667 recalls
+2024 - Class III, 67 recalls 
+2025 - Class I, 770 recalls 
+2025 - Class II, 718 recalls
+2025 - Class III, 88 recalls
+
+
+- Monthly recall AVG
+2024 - 128 on average
+2025 - 131 on average
+
+- Yearly average of recalls by state
+2024 - 34 = monthly average
+2025 - 34 = monthly average
