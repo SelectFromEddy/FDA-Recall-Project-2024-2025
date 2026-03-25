@@ -1,8 +1,6 @@
 
 
--- File: create_fda_recalls_2025_table.sql
--- Purpose: Create table for FDA recall events (2025)
--- Notes: recall number represents a recall event not a product ID
+-- Create table for FDA recall events (2025)
 
 CREATE TABLE fda_recalls_2025 (
 recalling_firm TEXT,
