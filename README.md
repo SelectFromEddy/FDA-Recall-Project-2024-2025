@@ -1,4 +1,4 @@
-**Food Recall EDA(Comparison) project (2025)  Started 01/12/2026**
+**Food Recall EDA(Comparison) project (2024 - 2025)  Started 01/12/2026**
 
 ## Executive Summary
 Between 2024 and 2025, total FDA recalls remained pretty stable (1,539 to 1,576, +2.4%), but severity increased as Class I recalls rose from 667 to 770, representing a larger share of total recalls. Seasonal spikes were observed, with June 2025 reaching 303 recalls. While overall recall volume is steady, the shift toward higher-risk classifications and increased active recalls suggests growing public health risk exposure.
